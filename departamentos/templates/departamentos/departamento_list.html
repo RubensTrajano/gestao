@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    list
+
+{% for departamento in object_list %}
+    <a href="#" >{{ departamento}}</a>
+
+        </a>
+        <br>
+{% endfor %}
+
+        <a href="" class="btn btn-info">Novo</a>
+{% endblock %}
