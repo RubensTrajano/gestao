@@ -7,8 +7,8 @@ SECRET_KEY = 'django-insecure-(-px!9ueg9321+x=+3%&*c@_mmmv6#n9(_6%ir&7t$8o2z#eo@
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['18.118.115.69']
-
+ALLOWED_HOSTS = []
+#'18.118.115.69'
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -92,13 +92,13 @@ USE_I18N = True
 USE_TZ = True
 
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 
-STATIC_ROOT = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, "/home/ubuntu/gestao/static")
 
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'login'
